@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-section1 {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 3rem;
+  text-align: start;
+}
+
+.section1-textTop-con > .posterFont {
+  color: #e7151c;
+  font-family: "Permanent Marker", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.about-section1 > .section1-left-con {
+  width: 45%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-section1 > .section1-right-con {
+  width: 55%;
+}
+
+.section1-right-con > .section-right-img-con > img {
+  width: 100%;
+}
+
+.section1-textTop-con > .section1-left-con-heading {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 54px;
+  padding-right: 2rem;
+  text-align: left;
+}
+
+.section1-textBottom-con {
+  color: gray;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .about-section1 {
+    max-width: 850px;
+    width: 100%;
+    gap: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .about-section1 {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section1-textTop-con > .section1-left-con-heading {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    padding-right: 1rem;
+    text-align: left;
+  }
+  .about-section1 > .section1-left-con {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .about-section1 > .section1-right-con {
+    width: 100%;
+  }
+  .section1-right-con > .section-right-img-con {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .section1-right-con > .section-right-img-con > img {
+    width: 100%;
+  }
+}
+@media (max-width: 431px) {
+  .about-section1 {
+    width: 100%;
+    padding: 1rem;
+  }
+  .section1-right-con > .section-right-img-con {
+    width: 100%;
+  }
+  .about-section1-right-con > .section-right-img-con > img {
+    width: 100%;
+  }
+  .section1-textTop-con > .section1-left-con-heading {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 24px;
+    padding-right: 2rem;
+    text-align: left;
+  }
+}
+@media (max-width: 1024px) {
+  .submenu-con h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}/*# sourceMappingURL=about.css.map */
