@@ -1,18 +1,29 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "roboto";
-    font-size: 16px;
-    font-weight: 400;
-    
-}
-.about-section1{
-    width: 900px;
+
+.about-container{
     margin: 0 auto;
     display: flex;
     margin-top: 3rem;
     text-align: start;
+    .section1-left-con{
+       display: flex;
+       flex-direction: column;
+       width: 45%;
+       .section1-left-con-heading{
+        font-size: 65px;
+        font-weight: 900;
+        line-height: 54px;
+        padding-right: 2rem;
+        text-align: left; 
+        font-family: Barlow;
+       }
+
+    }
+    .section1-right-con{
+      width:55%;
+      img{
+        height: 400px;
+      }
+    }
     
 }
 .section1-textTop-con > .posterFont{

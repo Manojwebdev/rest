@@ -29,35 +29,25 @@ export default function Header() {
   };
   return (
     <header id="header" className="header">
+    
       <section id="header-section1" className="header-section1">
         <div className="row header-container  flex flex-between ">
-           <div className="header-logo-wrapper hidden">
             <div className="header-logo-con">
               <img src={restaurentLogo} alt="" />
             </div>
-          </div>
-          <div className="header-nav-wrapper nav-hide">
-            <nav className="header-navbar">
               <ul className="header-nav-list flex">
              {['HOME','MENU','ABOUT','CONTACT'].map((item,index) =>(
-              <li 
+              <li className="list"
                onClick={() => handleClick(paths[item.toLowerCase()+'Path'])}
               key={index}> {item} </li>
              )  )}
               </ul>
-            </nav>
-          </div>
-         
-
-          <div className="header-buttons-wrapper ">
-            <ul className="header-buttons-ul flex">
+            <div className="header-buttons-ul flex">
               <li><OrderNOwButton /></li>
               <li className="header-buttons-ul-list burger"  onClick={handleMenu}>
-                <CiMenuBurger />
+                <CiMenuBurger className="icon"/>
               </li>
-              
-            </ul>
-          </div>
+            </div>
         </div>
         
 
@@ -74,7 +64,6 @@ export default function Header() {
         </ul>
        
       </section>
-
       <section id="header-section2" className="header-section2"></section>
     </header>
   );

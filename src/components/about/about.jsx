@@ -11,7 +11,7 @@ export default function About() {
     /* <button onClick={handleClick}>hi</button>  */
   }
   return (
-    <section className="about-section1 welcome-element">
+    <div className="about-container welcome-element row">
       <div className="section1-left-con flex">
         <div className="section1-textTop-con">
           <p className="posterFont">WELCOME SAI ARUNA RESTAURENT</p>
@@ -34,6 +34,6 @@ export default function About() {
           <img src={restaurentImage} />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
